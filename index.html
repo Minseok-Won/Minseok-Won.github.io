@@ -19,49 +19,65 @@
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <a class="nav-cta" href="assets/cv.pdf">CV</a>
     </nav>
   </header>
 
   <main id="main-content">
     <section class="hero" aria-labelledby="intro-title">
       <div class="hero-copy">
-        <p class="eyebrow">Personal Website</p>
-        <h1 id="intro-title">Hello, I am Won Minseok.</h1>
+        <p class="eyebrow">Personal profile</p>
+        <h1 id="intro-title">Won Minseok</h1>
         <p class="lead">
-          I enjoy building clear, practical projects and sharing work that is easy to read,
+          I build clear, practical projects and keep my work simple to read,
           use, and improve.
         </p>
         <div class="actions" role="group" aria-label="Key links">
-          <a class="button primary" href="assets/cv.pdf">View CV</a>
-          <a class="button secondary" href="https://github.com/Numin17" rel="noreferrer">GitHub</a>
+          <a class="button button-primary" href="assets/cv.pdf">View CV</a>
+          <a class="button button-secondary" href="https://github.com/Numin17" rel="noreferrer">GitHub</a>
         </div>
       </div>
-      <figure class="profile-figure">
+
+      <aside class="profile-panel" aria-label="Profile summary">
         <img src="assets/profile.jpg" alt="Portrait of Won Minseok" width="1200" height="1500">
-      </figure>
+        <div class="profile-rows">
+          <div class="profile-row">
+            <span>Focus</span>
+            <strong>Readable web projects</strong>
+          </div>
+          <div class="profile-row">
+            <span>Resume</span>
+            <strong>PDF available</strong>
+          </div>
+          <div class="profile-row">
+            <span>Code</span>
+            <strong>github.com/Numin17</strong>
+          </div>
+        </div>
+      </aside>
     </section>
 
-    <section class="section section-soft" id="about" aria-labelledby="about-title">
-      <div class="section-inner two-column">
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section-inner feature-row">
         <div>
           <p class="section-kicker">About</p>
-          <h2 id="about-title">A simple place for my work and resume.</h2>
+          <h2 id="about-title">A lightweight home for my work.</h2>
         </div>
         <div class="body-copy">
           <p>
             This site collects my profile, current resume, and project links in one
-            lightweight GitHub Pages home. It is built to stay fast, readable, and easy to
-            update as my work grows.
+            fast GitHub Pages page. The design stays quiet and direct so the content
+            remains easy to scan.
           </p>
           <p>
-            I care about thoughtful interfaces, dependable implementation, and making
-            technical work understandable for the people who use it.
+            I care about dependable implementation, thoughtful interfaces, and technical
+            work that feels approachable for the people who use it.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="work" aria-labelledby="work-title">
+    <section class="section section-soft" id="work" aria-labelledby="work-title">
       <div class="section-inner">
         <div class="section-heading">
           <p class="section-kicker">Work</p>
@@ -69,7 +85,7 @@
         </div>
         <div class="work-grid">
           <article class="work-card">
-            <h3>Personal Website</h3>
+            <h3>Personal website</h3>
             <p>A static, accessible homepage hosted with GitHub Pages.</p>
           </article>
           <article class="work-card">
@@ -84,7 +100,7 @@
       </div>
     </section>
 
-    <section class="section section-accent" id="resume" aria-labelledby="resume-title">
+    <section class="section section-dark" id="resume" aria-labelledby="resume-title">
       <div class="section-inner resume-panel">
         <div>
           <p class="section-kicker">Resume</p>
@@ -93,26 +109,29 @@
             The resume is available as a PDF and opens directly from this site.
           </p>
         </div>
-        <a class="button primary" href="assets/cv.pdf" aria-label="Open Won Minseok CV PDF">Open CV</a>
+        <a class="button button-on-dark" href="assets/cv.pdf" aria-label="Open Won Minseok CV PDF">Open CV</a>
       </div>
     </section>
 
     <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="section-inner two-column">
+      <div class="section-inner feature-row">
         <div>
           <p class="section-kicker">Contact</p>
           <h2 id="contact-title">Find me online.</h2>
         </div>
-        <div class="contact-links">
-          <a href="https://github.com/Numin17" rel="noreferrer">GitHub profile</a>
-          <a href="assets/cv.pdf">CV PDF</a>
+        <div class="contact-links" aria-label="Contact links">
+          <a class="button button-subtle" href="https://github.com/Numin17" rel="noreferrer">GitHub profile</a>
+          <a class="button button-subtle" href="assets/cv.pdf">CV PDF</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Won Minseok. Built with HTML and CSS for GitHub Pages.</p>
+    <div class="footer-inner">
+      <a class="footer-brand" href="#top">Won Minseok</a>
+      <p>&copy; 2026 Won Minseok. Built with static HTML and CSS for GitHub Pages.</p>
+    </div>
   </footer>
 </body>
 </html>
