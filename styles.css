@@ -471,6 +471,24 @@ h3 {
   display: block;
 }
 
+.detail-list .detail-note {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 14px;
+  position: relative;
+}
+
+.detail-list .detail-note::before {
+  content: "";
+  background: var(--body);
+  border-radius: 999px;
+  height: 4px;
+  left: -12px;
+  position: absolute;
+  top: 8px;
+  width: 4px;
+}
+
 .courses-layout {
   display: grid;
   gap: 32px;
@@ -516,7 +534,7 @@ h3 {
 }
 
 .ai-card {
-  background: var(--canvas);
+  background: var(--canvas-soft);
   border-radius: 16px;
   display: grid;
   gap: 12px;
