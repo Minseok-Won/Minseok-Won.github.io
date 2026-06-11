@@ -1,7 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website for Won Minseok with profile, resume, projects, and contact links.">
+  <title>Won Minseok | Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>Welcome to my Personal Page</h1>
-  <p>Hosted on GitHub Pages!</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Won Minseok home">Won Minseok</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Personal Website</p>
+        <h1 id="intro-title">Hello, I am Won Minseok.</h1>
+        <p class="lead">
+          I enjoy building clear, practical projects and sharing work that is easy to read,
+          use, and improve.
+        </p>
+        <div class="actions" role="group" aria-label="Key links">
+          <a class="button primary" href="assets/cv.pdf">View CV</a>
+          <a class="button secondary" href="https://github.com/Numin17" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <figure class="profile-figure">
+        <img src="assets/profile.jpg" alt="Portrait of Won Minseok" width="1200" height="1500">
+      </figure>
+    </section>
+
+    <section class="section section-soft" id="about" aria-labelledby="about-title">
+      <div class="section-inner two-column">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2 id="about-title">A simple place for my work and resume.</h2>
+        </div>
+        <div class="body-copy">
+          <p>
+            This site collects my profile, current resume, and project links in one
+            lightweight GitHub Pages home. It is built to stay fast, readable, and easy to
+            update as my work grows.
+          </p>
+          <p>
+            I care about thoughtful interfaces, dependable implementation, and making
+            technical work understandable for the people who use it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Work</p>
+          <h2 id="work-title">Selected areas</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <h3>Personal Website</h3>
+            <p>A static, accessible homepage hosted with GitHub Pages.</p>
+          </article>
+          <article class="work-card">
+            <h3>Resume</h3>
+            <p>A downloadable CV with a concise view of my background and experience.</p>
+          </article>
+          <article class="work-card">
+            <h3>Projects</h3>
+            <p>Code and experiments collected through my GitHub profile.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent" id="resume" aria-labelledby="resume-title">
+      <div class="section-inner resume-panel">
+        <div>
+          <p class="section-kicker">Resume</p>
+          <h2 id="resume-title">Download or view my CV.</h2>
+          <p>
+            The resume is available as a PDF and opens directly from this site.
+          </p>
+        </div>
+        <a class="button primary" href="assets/cv.pdf" aria-label="Open Won Minseok CV PDF">Open CV</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section-inner two-column">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">Find me online.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/Numin17" rel="noreferrer">GitHub profile</a>
+          <a href="assets/cv.pdf">CV PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Won Minseok. Built with HTML and CSS for GitHub Pages.</p>
+  </footer>
 </body>
 </html>
