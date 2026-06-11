@@ -515,6 +515,29 @@ h3 {
   background: var(--hairline);
 }
 
+.ai-card {
+  background: var(--canvas);
+  border-radius: 16px;
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+}
+
+.ai-card h3 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.ai-card p {
+  color: var(--body);
+  margin-bottom: 12px;
+}
+
+.ai-card p:last-child {
+  margin-bottom: 0;
+}
+
 .site-footer {
   background: var(--primary);
   color: var(--on-primary);
