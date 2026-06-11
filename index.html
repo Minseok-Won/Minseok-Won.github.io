@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal website for Won Minseok with profile, resume, projects, and contact links.">
-  <title>Won Minseok | Personal Website</title>
+  <meta name="description" content="원민석(Minseok Won)의 개인 웹사이트: 소개, 프로젝트, CV, 수강 과목, 연락처.">
+  <title>Minseok Won | Personal Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content">본문으로 이동</a>
 
   <header class="site-header" id="top">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Won Minseok home">Won Minseok</a>
+    <nav class="nav" aria-label="주요 내비게이션">
+      <a class="brand" href="#top" aria-label="원민석 홈">Minseok Won</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#courses">Courses</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="nav-cta" href="assets/cv.pdf">CV</a>
+      <a class="nav-cta" href="assets/cv.pdf">CV PDF</a>
     </nav>
   </header>
 
   <main id="main-content">
     <section class="hero" aria-labelledby="intro-title">
       <div class="hero-copy">
-        <p class="eyebrow">Personal profile</p>
-        <h1 id="intro-title">Won Minseok</h1>
+        <p class="eyebrow">Industrial Engineering · AI</p>
+        <h1 id="intro-title">원민석<br><span>Minseok Won</span></h1>
         <p class="lead">
-          I build clear, practical projects and keep my work simple to read,
-          use, and improve.
+          서울대학교 산업공학과 학부생이자 인공지능 연합전공 복수전공생입니다.
+          최적화, 머신러닝, 딥러닝을 바탕으로 실제 문제를 구조화하고 해결하는 일에 관심이 있습니다.
         </p>
-        <div class="actions" role="group" aria-label="Key links">
-          <a class="button button-primary" href="assets/cv.pdf">View CV</a>
-          <a class="button button-secondary" href="https://github.com/Numin17" rel="noreferrer">GitHub</a>
+        <div class="actions" role="group" aria-label="주요 링크">
+          <a class="button button-primary" href="#projects">View projects</a>
+          <a class="button button-secondary" href="assets/cv.pdf">Download CV</a>
         </div>
       </div>
 
-      <aside class="profile-panel" aria-label="Profile summary">
-        <img src="assets/profile.jpg" alt="Portrait of Won Minseok" width="1200" height="1500">
+      <aside class="profile-panel" aria-label="프로필 요약">
+        <img src="assets/profile.jpg" alt="원민석 프로필 사진" width="1200" height="1500">
         <div class="profile-rows">
           <div class="profile-row">
-            <span>Focus</span>
-            <strong>Readable web projects</strong>
+            <span>School</span>
+            <strong>서울대학교 산업공학과</strong>
           </div>
           <div class="profile-row">
-            <span>Resume</span>
-            <strong>PDF available</strong>
+            <span>Major</span>
+            <strong>Industrial Engineering · AI</strong>
           </div>
           <div class="profile-row">
-            <span>Code</span>
-            <strong>github.com/Numin17</strong>
+            <span>Research interests</span>
+            <strong>Optimization · ML · FinTech</strong>
           </div>
         </div>
       </aside>
@@ -60,77 +61,182 @@
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="section-inner feature-row">
         <div>
-          <p class="section-kicker">About</p>
-          <h2 id="about-title">A lightweight home for my work.</h2>
+          <p class="section-kicker">About Me</p>
+          <h2 id="about-title">최적화와 AI로 현실의 의사결정 문제를 풀고 싶습니다.</h2>
         </div>
         <div class="body-copy">
           <p>
-            This site collects my profile, current resume, and project links in one
-            fast GitHub Pages page. The design stays quiet and direct so the content
-            remains easy to scan.
+            저는 서울대학교 산업공학과 22학번으로 재학 중이며, 서울대학교 연합전공 인공지능을
+            복수전공하고 있습니다. 수리최적화와 통계적 분석을 통해 복잡한 시스템을 이해하고,
+            더 나은 운영 전략을 설계하는 데 관심이 있습니다.
           </p>
           <p>
-            I care about dependable implementation, thoughtful interfaces, and technical
-            work that feels approachable for the people who use it.
+            주요 관심 분야는 동적 최적화, 선형 및 비선형 최적화, 머신러닝, 딥러닝,
+            그리고 핀테크 분야의 현물 투자입니다.
           </p>
+          <div class="tag-list" aria-label="관심 분야">
+            <span>Dynamic optimization</span>
+            <span>Linear optimization</span>
+            <span>Nonlinear optimization</span>
+            <span>Machine learning</span>
+            <span>Deep learning</span>
+            <span>FinTech</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft" id="work" aria-labelledby="work-title">
+    <section class="section section-soft" id="projects" aria-labelledby="projects-title">
       <div class="section-inner">
         <div class="section-heading">
-          <p class="section-kicker">Work</p>
-          <h2 id="work-title">Selected areas</h2>
+          <p class="section-kicker">Projects</p>
+          <h2 id="projects-title">수행 프로젝트</h2>
         </div>
-        <div class="work-grid">
-          <article class="work-card">
-            <h3>Personal website</h3>
-            <p>A static, accessible homepage hosted with GitHub Pages.</p>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="card-meta">Optimization Grand Challenge 2026 · Team Cook</p>
+            <h3>OGC 2026 물류 선적 및 항로 최적화</h3>
+            <p>
+              배에 선적하는 물류의 양과 항로를 함께 계산하여 최적의 운반 경로를 찾는 문제를
+              수리최적화 기반으로 해결합니다.
+            </p>
           </article>
-          <article class="work-card">
-            <h3>Resume</h3>
-            <p>A downloadable CV with a concise view of my background and experience.</p>
-          </article>
-          <article class="work-card">
-            <h3>Projects</h3>
-            <p>Code and experiments collected through my GitHub profile.</p>
+          <article class="project-card">
+            <p class="card-meta">Statistical analysis · Seoul public bike system</p>
+            <h3>서울특별시 공공자전거 효과성 및 Capacity 제언 연구</h3>
+            <p>
+              서울시 공공자전거의 효과성을 회귀추정 등 통계적 분석으로 검토하고,
+              재배치 관리 비용을 줄이기 위한 적정 Capacity를 제언합니다.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="resume" aria-labelledby="resume-title">
-      <div class="section-inner resume-panel">
+    <section class="section section-dark" id="cv" aria-labelledby="cv-title">
+      <div class="section-inner">
+        <div class="cv-heading">
+          <div>
+            <p class="section-kicker">CV</p>
+            <h2 id="cv-title">학력, 기술, 경험</h2>
+          </div>
+          <a class="button button-on-dark" href="assets/cv.pdf" aria-label="원민석 CV PDF 열기">Open CV PDF</a>
+        </div>
+
+        <div class="cv-grid">
+          <article class="cv-card">
+            <h3>Education</h3>
+            <ul class="detail-list">
+              <li>
+                <strong>서울대학교</strong>
+                <span>산업공학과 학사 재학 중, 22학번 · 2022.03 ~ 현재</span>
+                <span>서울대학교 연합전공 인공지능 복수전공 중</span>
+              </li>
+              <li>
+                <strong>선덕고등학교</strong>
+                <span>2019.03 ~ 2022.02</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="cv-card">
+            <h3>Experience</h3>
+            <ul class="detail-list">
+              <li>
+                <strong>LDS Lab 여름방학 학부연구생 예정</strong>
+                <span>2026.06 ~</span>
+              </li>
+              <li>
+                <strong>수도방위사령부 22화생방대대 병장 만기전역</strong>
+                <span>2024.03 ~ 2025.09</span>
+                <span>군 복무 중 대화생방테러특수임무대(CRST) 수행</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="cv-card">
+            <h3>Skills & Certificates</h3>
+            <ul class="detail-list">
+              <li>
+                <strong>Programming</strong>
+                <span>Fico Xpress Mosel, C/C++, Java, Python</span>
+              </li>
+              <li>
+                <strong>Languages</strong>
+                <span>한국어(모국어), 영어(TOEFL 87)</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="cv-card">
+            <h3>Awards & Scholarships</h3>
+            <ul class="detail-list">
+              <li>
+                <strong>교내 성적 장학금</strong>
+                <span>2023년 1학기 · 반액 장학금</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="courses" aria-labelledby="courses-title">
+      <div class="section-inner courses-layout">
         <div>
-          <p class="section-kicker">Resume</p>
-          <h2 id="resume-title">Download or view my CV.</h2>
-          <p>
-            The resume is available as a PDF and opens directly from this site.
-          </p>
+          <p class="section-kicker">Courses</p>
+          <h2 id="courses-title">AI/산업공학 관련 수강 과목</h2>
         </div>
-        <a class="button button-on-dark" href="assets/cv.pdf" aria-label="Open Won Minseok CV PDF">Open CV</a>
+        <div class="course-columns">
+          <article class="course-card">
+            <h3>Completed courses</h3>
+            <ul class="pill-list">
+              <li>최적화 모형 및 개론</li>
+              <li>공학수학 1, 2</li>
+              <li>머신러닝을 위한 기초 수학 및 프로그래밍</li>
+              <li>경영과학 1, 2</li>
+              <li>알고리즘</li>
+              <li>인간공학 / 인간공학실험</li>
+            </ul>
+          </article>
+          <article class="course-card course-card-strong">
+            <h3>Courses you plan to take</h3>
+            <ul class="pill-list">
+              <li>딥러닝의 기초</li>
+              <li>생산관리</li>
+              <li>자료구조</li>
+              <li>데이터 관리와 분석(재수강)</li>
+              <li>인공지능</li>
+              <li>시뮬레이션</li>
+              <li>컴퓨터비전</li>
+              <li>서비스공학</li>
+              <li>etc.</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-title">
+    <section class="section section-soft" id="contact" aria-labelledby="contact-title">
       <div class="section-inner feature-row">
         <div>
           <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">Find me online.</h2>
+          <h2 id="contact-title">연락처와 온라인 프로필</h2>
         </div>
-        <div class="contact-links" aria-label="Contact links">
-          <a class="button button-subtle" href="https://github.com/Numin17" rel="noreferrer">GitHub profile</a>
-          <a class="button button-subtle" href="assets/cv.pdf">CV PDF</a>
-        </div>
+        <address class="contact-card">
+          <a href="tel:+821032538488">+82 10-3253-8488</a>
+          <a href="mailto:mdave2003@snu.ac.kr">mdave2003@snu.ac.kr</a>
+          <a href="http://www.linkedin.com/in/numin17" rel="noreferrer">LinkedIn · numin17</a>
+          <a href="https://github.com/Minseok-Won" rel="noreferrer">GitHub · Minseok-Won</a>
+        </address>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <a class="footer-brand" href="#top">Won Minseok</a>
-      <p>&copy; 2026 Won Minseok. Built with static HTML and CSS for GitHub Pages.</p>
+      <a class="footer-brand" href="#top">Minseok Won</a>
+      <p>&copy; 2026 원민석. Built with static HTML and CSS for GitHub Pages.</p>
     </div>
   </footer>
 </body>
